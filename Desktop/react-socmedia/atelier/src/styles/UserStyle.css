@@ -1,0 +1,129 @@
+/* 
+@file: Users.css
+@author: @rishisant
+@date: 2022-20-11
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Mandali&display=swap');
+
+* {
+    font-family: Mandali;
+}
+
+.userList {
+    /* generate a list of users, display them in vertical format. */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    padding: 10px;
+    /* center this div in the middle of the page */
+    margin: auto;
+    background-color: #f5f5f5;
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+    border: 1px solid #bababa;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+#userlist_title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.userlogo {
+    outline: .5px solid black;
+    filter: drop-shadow(2px 2px 1px #bababa);
+}
+
+/* medallions */
+#goldmedal {
+    /* make a gold medal appear next to the user's name, decorate the text with a shiny gold circle */
+    background-image: url(../img/medals/goldbg.jpeg);
+    padding: 10px;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    /* get the text to display in the middle of the div*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* make the text look like a gold medal */
+    font-size: 1em;
+    font-weight: bold;
+    /* make the medal look like it's floating */
+    filter: drop-shadow(2px 2px 1px #bababa);
+    outline: .5px solid black;
+    border-radius: 50%;
+    margin-right: 20px;
+    animation: rotateY 5s linear infinite;
+}
+
+#silvermedal {
+    /* make a gold medal appear next to the user's name, decorate the text with a shiny gold circle */
+    background-image: url(../img/medals/silverbg.jpeg);
+    padding: 10px;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    /* get the text to display in the middle of the div*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* make the text look like a gold medal */
+    font-size: 1em;
+    font-weight: bold;
+    /* make the medal look like it's floating */
+    filter: drop-shadow(2px 2px 1px #bababa);
+    outline: .5px solid black;
+    border-radius: 50%;
+    margin-right: 20px;
+    animation: rotateY 5s linear infinite;
+}
+
+#bronzemedal {
+    /* make a gold medal appear next to the user's name, decorate the text with a shiny gold circle */
+    background-image: url(../img/medals/bronzebg.jpeg);
+    padding: 10px;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    /* get the text to display in the middle of the div*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* make the text look like a gold medal */
+    font-size: 1em;
+    font-weight: bold;
+    /* make the medal look like it's floating */
+    filter: drop-shadow(2px 2px 1px #bababa);
+    outline: .5px solid black;
+    border-radius: 50%;
+    margin-right: 20px;
+    animation: rotateY 5s linear infinite;
+}
+
+/* animations for rotate */
+@keyframes rotateY {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
